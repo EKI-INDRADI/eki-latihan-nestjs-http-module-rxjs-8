@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "1efaf2ef-9f0e-4f9f-b306-b4e828fed1a9",
+		"name": "NESTJS - HTTP MODULE - BY EKI INDRADI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create controller",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\" : \"EKITESTING\",\r\n    \"xxx\" : \"zzz\",\r\n    \"zzz\" : \"xxx\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/example-httpmodule",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"example-httpmodule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create controller Axios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\" : \"EKITESTING\",\r\n    \"xxx\" : \"zzz\",\r\n    \"zzz\" : \"xxx\",\r\n    \"zx\" : \"without async function\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/example-httpmodule/axios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"example-httpmodule",
+						"axios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create controller Axios Async Services",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\" : \"EKITESTING\",\r\n    \"xxx\" : \"zzz\",\r\n    \"zzz\" : \"xxx\",\r\n    \"zx\" : \"async function\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/example-httpmodule/axios-async",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"example-httpmodule",
+						"axios-async"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
